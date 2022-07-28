@@ -1,7 +1,7 @@
-###
+### Landing Page
 get http://localhost:3000
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTg4Mzg0NzUsImV4cCI6MTY1ODg0MjA3NSwiYXVkIjoid3d3Lm5pc2hhbnQuc3VyZ2Uuc2giLCJpc3MiOiJleHByZXNzU2VydmVyIiwic3ViIjoiNjJkZTRkMTMwNGU0NTA0ZDY1YmM4NGVkIn0.fvPKt3Xp4Ns85YMWOB9YWBe-8fh0rWE3tcLvRBUOPe0
-###
+### Login 
 post http://localhost:3000/auth/login
 content-type: application/json
 
@@ -9,21 +9,21 @@ content-type: application/json
     "email":"BANGLA@gmail.com",
     "password":"12345"
 }
-###
+### Refresh Token
 post http://localhost:3000/auth/refresh-token
 Content-Type: application/json
 
 {
     "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTg5MTkxNjksImV4cCI6MTY5MDQ3Njc2OSwiYXVkIjoid3d3Lm5pc2hhbnQuc3VyZ2Uuc2giLCJpc3MiOiJleHByZXNzU2VydmVyIiwic3ViIjoiNjJkZTRkMTMwNGU0NTA0ZDY1YmM4NGVkIn0.gPVBBXelstbCv7NOTvG7iPSwbcSvyGd4BEW8ftxh55w"
 }
-###
+### Logout
 delete http://localhost:3000/auth/logout
 Content-Type: application/json
 
 {
     "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTg5MjMwMDMsImV4cCI6MTY5MDQ4MDYwMywiYXVkIjoid3d3Lm5pc2hhbnQuc3VyZ2Uuc2giLCJpc3MiOiJleHByZXNzU2VydmVyIiwic3ViIjoiNjJkZTRkMTMwNGU0NTA0ZDY1YmM4NGVkIn0.q3iRonKvV8HKl10JbBufjgwdzQDYr8HHzX088Vv24h8"
 }
-###
+### Register
 post http://localhost:3000/auth/register
 content-type: application/json
 
